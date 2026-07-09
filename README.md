@@ -1,14 +1,22 @@
+<div align="center">
+
 # Private AI Runtime
 
-Portable local inference and offline AI workspace.
+Portable local inference and offline AI workspace
+
+![Status](https://img.shields.io/badge/status-Stable-28a745?style=flat-square)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
+![Updated](https://img.shields.io/github/last-commit/aentrepreneur/private-ai-runtime?style=flat-square)
+
+</div>
 
 ## Overview
 
-Private AI Runtime is a public-facing concept for a portable local AI environment designed for private analysis, offline workflows, and controlled inference.
+Private AI Runtime is a portable local AI environment designed for private analysis, offline workflows, and controlled inference.
 
 It is meant for scenarios where privacy, portability, and operational simplicity matter more than cloud dependency.
 
-This repository is intentionally public-safe. It documents the runtime model, architectural logic, and operator value without exposing private packaging details or sensitive implementation internals.
+This repository is intentionally public-safe. It documents the runtime model, architectural logic, and operator value without exposing private packaging details.
 
 ## Design Principles
 
@@ -39,23 +47,12 @@ In practice, the value comes from combining:
 
 ## Runtime Model
 
-The public framing of the runtime follows a simple operational flow:
-
-- portable runtime package
-- local model execution
-- private analysis or reporting task
-- controlled output for the operator
-
-## Public Workflow
-
 ```text
 Portable Runtime
   -> local model execution
   -> private analysis or reporting
   -> controlled operator workflow
 ```
-
-See `docs/architecture.md` for the public runtime view.
 
 ## Why It Matters
 
@@ -68,36 +65,22 @@ This becomes especially relevant where teams need:
 - portable environments for analysis or support
 - fallback options when cloud-first tooling is not ideal
 
-## Public Use Cases
-
-- local analysis inside controlled environments
-- privacy-sensitive reporting workflows
-- portable operator stations for field or remote work
-- offline-capable support environments
-- resilience layers for broader infrastructure suites
-
-## Repository Structure
-
-```text
-private-ai-runtime/
-  README.md
-  docs/
-    architecture.md
-    operator-model.md
-    roadmap.md
-    use-cases.md
-  examples/
-    sample-commands.md
-    workflow.txt
-```
-
 ## Documentation
 
-- `docs/architecture.md`: public runtime model and layers
-- `docs/operator-model.md`: operator-facing framing and workflow intent
-- `docs/use-cases.md`: scenarios and expected outcomes
-- `docs/roadmap.md`: public direction and maturity path
+- `docs/architecture.md` — public runtime model and layers
+- `docs/operator-model.md` — operator-facing framing and workflow intent
+- `docs/use-cases.md` — scenarios and expected outcomes
+- `docs/roadmap.md` — public direction and maturity path
 
-## Repository Scope
+## Related Projects
 
-This public repository documents the architecture, workflow model, and public-safe positioning of the runtime. Sensitive implementation details and internal packaging logic remain outside the public brief.
+- [Uncensored LLM](https://github.com/aentrepreneur/uncensored-llm) — portable GGUF inference runtime
+- [Nexus One](https://github.com/aentrepreneur/nexus-one) — agentic deployment framework
+
+## License
+
+MIT — see [LICENSE](LICENSE)
+
+## Author
+
+Angel Esquivel — [@aentrepreneur](https://github.com/aentrepreneur)
